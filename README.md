@@ -10,3 +10,5 @@ Add to /etc/portage/repos.conf
 	sync-uri = https://github.com/pluick/ebuilds.git
 	priority = 50
 	auto-sync = Yes
+
+I don't think any of these are up to Gentoo's ebuild standards.
