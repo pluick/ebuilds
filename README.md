@@ -3,7 +3,7 @@ Add to /etc/portage/repos.conf
 
 	[pal-overlay]
 	
-	# Peter L's overlay
+	# Peter Luick's overlay
 	
 	location = /var/db/repos/pal-overlay
 	sync-type = git
