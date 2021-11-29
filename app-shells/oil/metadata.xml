@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="person">
+    <email>exampledev@gentoo.org</email>
+    <description>Primary maintainer</description>
+  </maintainer>
+  <maintainer type="project">
+    <email>exampleproject@gentoo.org</email>
+    <name>Gentoo Example Project</name>
+  </maintainer>
+  <longdescription>
+    Oil is a new Unix shell. It's our upgrade path from bash to a better language and runtime. It's also for Python and JavaScript users who avoid shell!
+  </longdescription>
+</pkgmetadata>
