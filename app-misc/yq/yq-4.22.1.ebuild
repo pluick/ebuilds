@@ -15,6 +15,10 @@ DEPEND=""
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
+src_unpack() {
+	default_src_unpack
+}
+
 src_install() {
 	einfo "Installing yq to ${D}"
 	install yq_linux_amd64 "${D}/bin/yq"
