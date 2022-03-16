@@ -15,11 +15,11 @@ DEPEND=""
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
-src_configure() {
-}
-
-src_compile() {
-}
+#src_configure() {
+#}
+#
+#src_compile() {
+#}
 
 src_install() {
 	einfo "Installing yq to ${D}"
