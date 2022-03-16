@@ -9,17 +9,11 @@ SRC_URI="https://github.com/mikefarah/yq/releases/download/v4.22.1/yq_linux_amd6
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64"
 
 DEPEND=""
 RDEPEND="${DEPEND}"
 BDEPEND=""
-
-#src_configure() {
-#}
-#
-#src_compile() {
-#}
 
 src_install() {
 	einfo "Installing yq to ${D}"
