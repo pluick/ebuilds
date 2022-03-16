@@ -21,7 +21,9 @@ src_unpack() {
 
 src_install() {
 	einfo "Installing yq to ${D}"
-	install yq_linux_amd64 "${D}/bin/yq"
+	if ! install yq_linux_amd64 "${D}/bin/yq"; then
+		die "Couldn't install yq to ${D}/bin/yq"
+	fi
 	#install -d ${D}/man/man1
 	#install -m 644 ./yq.1 "${D}/man/man1/"
 	#./install-man-page.sh
