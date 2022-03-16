@@ -15,16 +15,19 @@ DEPEND=""
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
+MY_P="yq_linux_amd64"
+MY_BINNAME="yq"
+MY_M="yq.1"
+
 src_unpack() {
 	default_src_unpack
+	mkdir "${S}" || die
+	mv "${MY_M}" "${S}/" || die
+	mv "${MY_P}" "${S}/${MY_BINNAME}" || die
 }
 
 src_install() {
 	einfo "Installing yq to ${D}"
-	if ! install yq_linux_amd64 "${D}/bin/yq"; then
-		die "Couldn't install yq to ${D}/bin/yq"
-	fi
-	#install -d ${D}/man/man1
-	#install -m 644 ./yq.1 "${D}/man/man1/"
-	#./install-man-page.sh
+	dobin ${MY_BINNAME}
+	doman ${MY_M}
 }
